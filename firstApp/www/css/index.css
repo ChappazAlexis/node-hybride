@@ -1,0 +1,9 @@
+#map { height: 180px; }
+
+@media screen and (min-width: 800px) { 
+    #map { height: 800px; }
+}
+
+#films {
+    display: none;
+}
