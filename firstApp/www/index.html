@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+
+<script defer src="./js/index.js"></script>
+<link rel="stylesheet" href="./css/index.css">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+crossorigin=""></script>
+
+
+<body style="margin:16px;border:1px solid #ccc">
+
+    <header class="w3-container w3-card-4 w3-theme">
+        <h1>FLIMS</h1>
+    </header>
+    
+
+    <div class="w3-panel">
+        <div>
+            <h2>Cinemas les plus proches</h2>
+            <div id="map">
+
+            </div>
+            <button onClick="handleOnFlyTo()" >Aller a la localisation</button>
+        </div>
+
+        <hr>
+        <h2>Films a l'affiche</h2>
+
+        <div id="aucun">
+            <p>Aucun film disponible, veuillez choisir un autre cinema</p>
+        </div>
+
+        <div id="films">
+            <div class="w3-row">
+                <div class="w3-col s3">
+                    <img src="img/rambo.jpeg" style="width:100%">
+                </div>
+                <div class="w3-col s9 w3-container">
+                    <h3>Rambo II</h3>
+                    <p>Un type qui tir sur tout le monde en se baladant dans le jungle</p>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+                <div class="w3-col s3">
+                    <img src="img/asterix.jpeg" style="width:100%">
+                </div>
+                <div class="w3-col s9 w3-container">
+                    <h3>Asterix au milieu</h3>
+                    <p>Le film de trop</p>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+                <div class="w3-col s3">
+                    <img src="img/touchable.webp" style="width:100%">
+                </div>
+                <div class="w3-col s9 w3-container">
+                    <h3>Touchable</h3>
+                    <p>Touched</p>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+                <div class="w3-col s3">
+                    <img src="img/asterix.jpeg" style="width:100%">
+                </div>
+                <div class="w3-col s9 w3-container">
+                    <h3>Asterix en bas</h3>
+                    <p>comme sa note</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w3-container w3-theme-l2" style="position:relative">
+        <a class="w3-btn w3-xlarge w3-circle w3-theme-action w3-right"
+            style="position:absolute;top:-28px;right:16px;">+</a>
+        <p>Copyright 2023</p>
+    </footer>
+
+</body>
+
+</html>
